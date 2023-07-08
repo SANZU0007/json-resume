@@ -14,18 +14,31 @@ let sanjay = {
       }
     ],
     "work_experience": [
-      {
+        {
+      
         "fresher"
-      }
+        }
         ]
     
-    ],
+    
     "skills": [
+    {
       "JavaScript",
       "React",
       "Node.js",
       "Python",
       "Agile methodologies"
+    }
     ]
   }
   
+for (let key in sanjay) {
+  // Access each property using sanjay[key]
+  console.log(key, sanjay[key]);
+}
+for (let skill of sanjay.skills) {
+  console.log(skill);
+}
+sanjay.skills.forEach(function (skill) {
+  console.log(skill);
+});
